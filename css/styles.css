@@ -2,18 +2,19 @@
 :root {
     --primary-txt-color: #212121;
     --secondary-txt-color: #757575;
-    --light-txt-color: #FFFFFF;
     --logo-txt-color: #000000;
     --accent-color: #2196F3;
     --btn-active-color: #188CE8;
     --link-accent-color: rgba(255, 255, 255, 0.6);
-    --primary-bg-color: #F5F5F5;
+    --primary-bg-color: #FFFFFF;
     --secondary-bg-color: #2F303A;
     --team-bg-color: #F5F4FA;
 }
 body {
     color: var(--primary-txt-color);
     font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.03em;
 }
 .list {
     list-style: none;
@@ -29,7 +30,6 @@ body {
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-    letter-spacing: 0.03em;
 }
 .logo span {
     color: var(--accent-color);
@@ -37,21 +37,22 @@ body {
 .sec-title {
     font-size: 36px;
     line-height: 1.16;
-    letter-spacing: 0.03em;
 }
 
 /* header */
 .head {
-    background-color: var(--light-txt-color);
+    background-color: var(--primary-bg-color);
 }
 .nav-list-link {
     color: var(--primary-txt-color);
     font-weight: 500;
-    font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
 }
 .nav-list-link:hover, .nav-list-link:focus {
+    color: var(--accent-color);
+}
+.nav-list-link.active-page {
     color: var(--accent-color);
 }
 .cont-list-link {
@@ -66,7 +67,7 @@ body {
     background-color: var(--secondary-bg-color);
 }
 .main-title {
-    color: var(--light-txt-color);
+    color: var(--primary-bg-color);
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -74,7 +75,7 @@ body {
     text-transform: uppercase;
 }
 .btn {
-    color: var(--light-txt-color);
+    color: var(--primary-bg-color);
     background-color: var(--accent-color);
     font-family: "Roboto", sans-serif;
     font-weight: 700;
@@ -92,14 +93,11 @@ body {
 .about-list-title {
     font-size: 14px;
     line-height: 1.14;
-    letter-spacing: 0.03em;
     text-transform: uppercase;
 }
 .about-list-text {
     color: var(--secondary-txt-color);
-    font-size: 14px;
     line-height: 2;
-    letter-spacing: 0.03em;
 }
 
 .work {
@@ -113,13 +111,11 @@ body {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
-    letter-spacing: 0.03em;
 }
 .team-list-text {
     color: var(--secondary-txt-color);
     font-size: 16px;
     line-height: 1.18;
-    letter-spacing: 0.03em;
 }
 
 /* портфоліо main */
@@ -137,7 +133,7 @@ body {
     cursor: pointer;
 }
 .port-btn:hover, .port-btn:focus {
-    color: var(--light-txt-color);
+    color: var(--primary-bg-color);
     background-color: var(--accent-color);
 }
 .port-list-title {
@@ -149,7 +145,6 @@ body {
     color: var(--secondary-txt-color);
     font-size: 16px;
     line-height: 1.87;
-    letter-spacing: 0.03em;
 } 
 
 /* footer */
@@ -157,14 +152,14 @@ body {
     background-color: var(--secondary-bg-color);
 }
 .foot-logo {
-    color: var(--light-txt-color);
+    color: var(--primary-bg-color);
+}
+.address {
+    font-style: normal;
 }
 .foot-list-link {
-    color: var(--light-txt-color);
-    font-weight: 400;
-    font-size: 14px;
+    color: var(--primary-bg-color);
     line-height: 1.71;
-    letter-spacing: 0.03em;
 }
 .foot-list-link:hover, .foot-list-link:focus {
     color: var(--link-accent-color);
